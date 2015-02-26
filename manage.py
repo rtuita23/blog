@@ -22,6 +22,9 @@ def seed():
         session.add(post)
     session.commit()
 
+@manager.command
+def hello():
+    print 'Hello World'
+
 if __name__ == "__main__":
     manager.run()
-    manager.see()

@@ -44,3 +44,7 @@ def add_post_post():
     session.add(post)
     session.commit()
     return redirect(url_for("posts"))
+
+@app.route("/login", methods=["GET"])
+def login_get():
+    return render_template("login.html")
